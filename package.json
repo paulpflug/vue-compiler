@@ -1,0 +1,50 @@
+{
+  "name": "vue-compiler",
+  "description": "a simple cli wrapper around the vue-component-compiler",
+  "version": "0.0.1",
+  "homepage": "https://github.com/paulpflug/",
+  "author": {
+    "name": "Paul Pflugradt",
+    "email": "paul.pflugradt@gmail.com"
+  },
+  "bin": {
+    "vue-compiler": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/paulpflug/vue-compiler"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "babel": "^5.6.14",
+    "coffee-script": "^1.9.3",
+    "commander": "^2.8.1",
+    "jade": "^1.11.0",
+    "less": "^2.5.1",
+    "myth": "^1.4.0",
+    "node-sass": "^3.2.0",
+    "stylus": "^0.51.1",
+    "vue-component-compiler": "^1.1.10"
+  },
+  "devDependencies": {
+    "rimraf": "^2.3.1",
+    "nodemon": "^1.3.7"
+  },
+  "keywords": [
+    "vue",
+    "component",
+    "compiler",
+    "cli"
+  ],
+  "readmeFilename": "README.md",
+  "scripts": {
+    "clean": "rimraf lib/ && mkdir lib",
+    "prebuild": "npm run clean",
+    "build": "coffee --compile --output lib/ src/*.coffee",
+    "watch": "coffee --compile --watch --output lib/ src/*.coffee",
+    "test": "./index.js --out tests/ tests/test.vue"
+  }
+}
