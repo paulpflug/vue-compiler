@@ -1,6 +1,6 @@
 # out: ../lib/index.js
 
-compiler = require "vue-component-compiler"
+{compiler} = require "vueify"
 fs = require "fs"
 path = require "path"
 
