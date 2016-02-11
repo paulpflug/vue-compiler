@@ -26,7 +26,7 @@ Usage: vue-compiler [options] <file ...>
 ## Example
 
 ```sh
-vue-compiler --out tests/ tests/test.vue
+vue-compiler --out test/ test/test.vue
 ```
 
 ## Release History
