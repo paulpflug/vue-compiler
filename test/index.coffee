@@ -18,7 +18,7 @@ describe "vue-compiler", ->
   before ->
     cleanJS()
     fs.writeFileSync "test/test1.vue" , """
-      <template lang="jade">
+      <template lang="pug">
       div test1
       </template>
       <style lang="stylus">
@@ -33,7 +33,7 @@ describe "vue-compiler", ->
       </script>
       """
     fs.writeFileSync "test/test2.vue" , """
-      <template lang="jade">
+      <template lang="pug">
       div test2
       </template>
       <script lang="coffee">
