@@ -1,13 +1,42 @@
 # vue-compiler
 
 a simple cli wrapper around the vue-component-compiler.
-Includes all supported languages.
+Includes no supported languages.
 
 ## Install
 
 ```sh
-npm install vue-compiler
+npm install --save-dev vue-compiler
 
+```
+## dependencies
+-  babel
+```
+npm install --save-dev babel-core babel-runtime babel-preset-es2015 babel-plugin-transform-runtime
+```   
+-  coffee-script
+```
+npm install --save-dev coffee-script
+```
+- pug
+```
+npm install --save-dev pug
+```
+- less
+```
+npm install --save-dev less
+```
+- sass
+```
+npm install --save-dev node-sass
+```
+- hot reloading
+```
+npm install --save-dev vue-hot-reload-api
+```
+- when using `<style></style>`
+```
+npm install --save-dev vueify-insert-css
 ```
 
 ## Usage
