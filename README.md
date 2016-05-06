@@ -10,6 +10,8 @@ npm install --save-dev vue-compiler
 
 ```
 ## dependencies
+script
+---
 -  babel
 ```
 npm install --save-dev babel-core babel-runtime babel-preset-es2015 babel-plugin-transform-runtime
@@ -18,9 +20,19 @@ npm install --save-dev babel-core babel-runtime babel-preset-es2015 babel-plugin
 ```
 npm install --save-dev coffee-script
 ```
+
+template
+---
 - pug
 ```
 npm install --save-dev pug
+```
+
+style
+---
+- when using any style
+```
+npm install --save vueify-insert-css
 ```
 - less
 ```
@@ -30,14 +42,17 @@ npm install --save-dev less
 ```
 npm install --save-dev node-sass
 ```
-- hot reloading
+- stylus
+```
+npm install --save-dev stylus
+```
+
+hot reloading
+---
 ```
 npm install --save-dev vue-hot-reload-api
 ```
-- when using `<style></style>`
-```
-npm install --save-dev vueify-insert-css
-```
+
 
 ## Usage
 

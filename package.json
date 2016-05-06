@@ -21,12 +21,15 @@
   "main": "lib/index.js",
   "dependencies": {
     "commander": "^2.9.0",
-    "vueify": "^8.4.1"
+    "vueify": "github:vuejs/vueify#7683c39b5d2f2b3e92881b01de4129b6f611bd77"
   },
   "devDependencies": {
     "chai": "^3.5.0",
+    "coffee-script": "^1.10.0",
     "mocha": "^2.4.5",
-    "rimraf": "^2.5.2"
+    "pug": "^2.0.0-alpha6",
+    "rimraf": "^2.5.2",
+    "stylus": "^0.54.5"
   },
   "keywords": [
     "vue",
