@@ -73,10 +73,6 @@ Usage: vue-compiler [options] <file ...>
 vue-compiler --out test/ test/test.vue
 ```
 
-## Release History
-
- - *v0.0.1*: First release
-
 ## License
 Copyright (c) 2015 Paul Pflugradt
 Licensed under the MIT license.

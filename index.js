@@ -9,5 +9,4 @@ program
   .option('--out <folder>', 'out')
   .parse(process.argv);
 
-
 require("./lib/index.js")(program)
