@@ -73,6 +73,11 @@ Usage: vue-compiler [options] <file ...>
 vue-compiler --out test/ test/test.vue
 ```
 
+## Changelog
+
+- 1.0.0  
+same as 0.3.0
+
 ## License
 Copyright (c) 2015 Paul Pflugradt
 Licensed under the MIT license.

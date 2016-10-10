@@ -46,7 +46,8 @@ describe "vue-compiler", ->
       fs.readFile "test/test1.js",encoding:"utf8", (err,data) ->
         throw err if err
         data.should.equal """
-          var __vueify_style__ = require("vueify-insert-css").insert("div{color:#00f}")
+          var __vueify_insert__ = require("vueify/lib/insert-css")
+          var __vueify_style__ = __vueify_insert__.insert("div{color:#00f}")
           console.log("test1");
 
           module.exports = {
