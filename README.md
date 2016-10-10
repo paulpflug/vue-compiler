@@ -4,11 +4,12 @@ a simple cli wrapper around the vue-component-compiler.
 Includes no supported languages.
 
 ## Install
-
 ```sh
 npm install --save-dev vue-compiler
-
+// vue@1.0
+npm install --save-dev vue-compiler@1
 ```
+
 ## dependencies
 script
 ---
@@ -74,9 +75,11 @@ vue-compiler --out test/ test/test.vue
 ```
 
 ## Changelog
+- 2.0.0  
+now compatible with vue 2.0.0  
 
 - 1.0.0  
-same as 0.3.0
+same as 0.3.0  
 
 ## License
 Copyright (c) 2015 Paul Pflugradt

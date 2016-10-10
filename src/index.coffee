@@ -5,7 +5,7 @@ fs = require "fs"
 path = require "path"
 
 compile = (filePath, out) ->
-  compiler.compile fs.readFileSync(filePath, encoding:"utf8"), (err,result) ->
+  compiler.compile fs.readFileSync(filePath, encoding:"utf8"), filePath, (err,result) ->
     throw err if err
     fs.writeFile out+path.basename(filePath,".vue")+".js", result, (err) ->
       throw err if err

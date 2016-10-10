@@ -46,8 +46,8 @@ describe "vue-compiler", ->
       fs.readFile "test/test1.js",encoding:"utf8", (err,data) ->
         throw err if err
         data.should.equal """
-          var __vueify_insert__ = require("vueify/lib/insert-css")
-          var __vueify_style__ = __vueify_insert__.insert("div{color:#00f}")
+          var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert("div{color:#00f}")
+          ;(function(){
           console.log("test1");
 
           module.exports = {
@@ -57,9 +57,12 @@ describe "vue-compiler", ->
               };
             }
           };
-
+          
+          })()
           if (module.exports.__esModule) module.exports = module.exports.default
-          ;(typeof module.exports === "function"? module.exports.options: module.exports).template = "<div>test1</div>"
+          var __vue__options__ = (typeof module.exports === "function"? module.exports.options: module.exports)
+          __vue__options__.render = function(){with(this){return _m(0)}}
+          __vue__options__.staticRenderFns = [function(){with(this){return _h('div',["test1"])}}]
 
         """
         done()
