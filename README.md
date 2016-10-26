@@ -6,7 +6,7 @@ Includes no supported languages.
 ## Install
 ```sh
 npm install --save-dev vue-compiler
-// vue@1.0
+# vue@1.0
 npm install --save-dev vue-compiler@1
 ```
 
@@ -30,46 +30,35 @@ vue-compiler --out test/ test/test.vue
 ```
 
 ## dependencies
-script
----
--  babel
-```
+#### script
+```sh
+# babel
 npm install --save-dev babel-core babel-runtime babel-preset-es2015 babel-plugin-transform-runtime
-```   
--  coffee-script
-```
+# coffee-script
 npm install --save-dev coffee-script
 ```
 
-template
----
-- pug
-```
+#### template
+```sh
+# pug
 npm install --save-dev pug
 ```
 
-style
----
-- when using any style
-```
+#### style
+```sh
+# when using any style
 npm install --save vueify-insert-css
-```
-- less
-```
+# less
 npm install --save-dev less
-```
-- sass
-```
+# sass
 npm install --save-dev node-sass
-```
-- stylus
-```
+# stylus
 npm install --save-dev stylus
 ```
 
-hot reloading
----
-```
+#### hot reloading
+
+```sh
 npm install --save-dev vue-hot-reload-api
 ```
 
