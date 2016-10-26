@@ -10,6 +10,25 @@ npm install --save-dev vue-compiler
 npm install --save-dev vue-compiler@1
 ```
 
+## Usage
+
+```
+Usage: vue-compiler [options] <file ...>
+
+  Options:
+
+    -h, --help      output usage information
+    -V, --version   output the version number
+    --out <folder>  out
+
+```
+
+## Example
+
+```sh
+vue-compiler --out test/ test/test.vue
+```
+
 ## dependencies
 script
 ---
@@ -54,25 +73,6 @@ hot reloading
 npm install --save-dev vue-hot-reload-api
 ```
 
-
-## Usage
-
-```
-Usage: vue-compiler [options] <file ...>
-
-  Options:
-
-    -h, --help      output usage information
-    -V, --version   output the version number
-    --out <folder>  out
-
-```
-
-## Example
-
-```sh
-vue-compiler --out test/ test/test.vue
-```
 
 ## Changelog
 - 2.0.0  
