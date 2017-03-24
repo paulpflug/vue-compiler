@@ -27,7 +27,7 @@
     "atom-ui-reporter": "0.0.1",
     "chai": "^3.5.0",
     "coffee-script": "^1.11.1",
-    "mocha": "^3.1.1",
+    "mocha": "^3.1.2",
     "pug": "^2.0.0-beta6",
     "rimraf": "^2.5.4",
     "stylus": "^0.54.5",

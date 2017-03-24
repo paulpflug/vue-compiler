@@ -1,3 +1,4 @@
+# DEPRECATED
 # vue-compiler
 
 a simple cli wrapper around the vue-component-compiler.
